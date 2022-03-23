@@ -9,6 +9,8 @@ x.y.z Release notes (yyyy-MM-dd)
 ### Fixed
 * Adding a Realm Object to a `ObservedResults` or a collections using `StateRealmObject` that is managed by the same Realm 
   would throw if the Object was frozen and not thawed before hand.
+* Comparing `Results` or `AnyRealmCollection` when using Realm via XCFramework 
+  would result in compile time errors ([Cocoa #7615](https://github.com/realm/realm-swift/issues/7615), since v10.21.0)
 
 <!-- ### Breaking Changes - ONLY INCLUDE FOR NEW MAJOR version -->
 
